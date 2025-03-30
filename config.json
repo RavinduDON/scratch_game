@@ -1,0 +1,287 @@
+{
+  "columns": 4,
+  "rows": 4,
+  "symbols": {
+    "A": {
+      "reward_multiplier": 5,
+      "type": "standard"
+    },
+    "B": {
+      "reward_multiplier": 3,
+      "type": "standard"
+    },
+    "C": {
+      "reward_multiplier": 2.5,
+      "type": "standard"
+    },
+    "D": {
+      "reward_multiplier": 2,
+      "type": "standard"
+    },
+    "E": {
+      "reward_multiplier": 1.2,
+      "type": "standard"
+    },
+    "F": {
+      "reward_multiplier": 1,
+      "type": "standard"
+    },
+    "10x": {
+      "reward_multiplier": 10,
+      "type": "bonus",
+      "impact": "multiply_reward"
+    },
+    "5x": {
+      "reward_multiplier": 5,
+      "type": "bonus",
+      "impact": "multiply_reward"
+    },
+    "+1000": {
+      "extra": 1000,
+      "type": "bonus",
+      "impact": "extra_bonus"
+    },
+    "+500": {
+      "extra": 500,
+      "type": "bonus",
+      "impact": "extra_bonus"
+    },
+    "MISS": {
+      "type": "bonus",
+      "impact": "miss"
+    }
+  },
+  "probabilities": {
+    "standard_symbols": [
+      {
+        "column": 0,
+        "row": 0,
+        "symbols": {
+          "A": 1,
+          "B": 2,
+          "C": 3,
+          "D": 4,
+          "E": 5,
+          "F": 6
+        }
+      },
+      {
+        "column": 0,
+        "row": 1,
+        "symbols": {
+          "A": 1,
+          "B": 2,
+          "C": 3,
+          "D": 4,
+          "E": 5,
+          "F": 6
+        }
+      },
+      {
+        "column": 0,
+        "row": 2,
+        "symbols": {
+          "A": 1,
+          "B": 2,
+          "C": 3,
+          "D": 4,
+          "E": 5,
+          "F": 6
+        }
+      },
+      {
+        "column": 1,
+        "row": 0,
+        "symbols": {
+          "A": 1,
+          "B": 2,
+          "C": 3,
+          "D": 4,
+          "E": 5,
+          "F": 6
+        }
+      },
+      {
+        "column": 1,
+        "row": 1,
+        "symbols": {
+          "A": 1,
+          "B": 2,
+          "C": 3,
+          "D": 4,
+          "E": 5,
+          "F": 6
+        }
+      },
+      {
+        "column": 1,
+        "row": 2,
+        "symbols": {
+          "A": 1,
+          "B": 2,
+          "C": 3,
+          "D": 4,
+          "E": 5,
+          "F": 6
+        }
+      },
+      {
+        "column": 2,
+        "row": 0,
+        "symbols": {
+          "A": 1,
+          "B": 2,
+          "C": 3,
+          "D": 4,
+          "E": 5,
+          "F": 6
+        }
+      },
+      {
+        "column": 2,
+        "row": 1,
+        "symbols": {
+          "A": 1,
+          "B": 2,
+          "C": 3,
+          "D": 4,
+          "E": 5,
+          "F": 6
+        }
+      },
+      {
+        "column": 2,
+        "row": 2,
+        "symbols": {
+          "A": 1,
+          "B": 2,
+          "C": 3,
+          "D": 4,
+          "E": 5,
+          "F": 6
+        }
+      }
+    ],
+    "bonus_symbols": {
+      "symbols": {
+        "10x": 1,
+        "5x": 2,
+        "+1000": 3,
+        "+500": 4,
+        "MISS": 5
+      }
+    }
+  },
+  "win_combinations": {
+    "same_symbol_3_times": {
+      "reward_multiplier": 1,
+      "when": "same_symbols",
+      "count": 3,
+      "group": "same_symbols"
+    },
+    "same_symbol_4_times": {
+      "reward_multiplier": 1.5,
+      "when": "same_symbols",
+      "count": 4,
+      "group": "same_symbols"
+    },
+    "same_symbol_5_times": {
+      "reward_multiplier": 2,
+      "when": "same_symbols",
+      "count": 5,
+      "group": "same_symbols"
+    },
+    "same_symbol_6_times": {
+      "reward_multiplier": 3,
+      "when": "same_symbols",
+      "count": 6,
+      "group": "same_symbols"
+    },
+    "same_symbol_7_times": {
+      "reward_multiplier": 5,
+      "when": "same_symbols",
+      "count": 7,
+      "group": "same_symbols"
+    },
+    "same_symbol_8_times": {
+      "reward_multiplier": 10,
+      "when": "same_symbols",
+      "count": 8,
+      "group": "same_symbols"
+    },
+    "same_symbol_9_times": {
+      "reward_multiplier": 20,
+      "when": "same_symbols",
+      "count": 9,
+      "group": "same_symbols"
+    },
+    "same_symbols_horizontally": {
+      "reward_multiplier": 2,
+      "when": "linear_symbols",
+      "group": "horizontally_linear_symbols",
+      "covered_areas": [
+        [
+          "0:0",
+          "0:1",
+          "0:2"
+        ],
+        [
+          "1:0",
+          "1:1",
+          "1:2"
+        ],
+        [
+          "2:0",
+          "2:1",
+          "2:2"
+        ]
+      ]
+    },
+    "same_symbols_vertically": {
+      "reward_multiplier": 2,
+      "when": "linear_symbols",
+      "group": "vertically_linear_symbols",
+      "covered_areas": [
+        [
+          "0:0",
+          "1:0",
+          "2:0"
+        ],
+        [
+          "0:1",
+          "1:1",
+          "2:1"
+        ],
+        [
+          "0:2",
+          "1:2",
+          "2:2"
+        ]
+      ]
+    },
+    "same_symbols_diagonally_left_to_right": {
+      "reward_multiplier": 5,
+      "when": "linear_symbols",
+      "group": "ltr_diagonally_linear_symbols",
+      "covered_areas": [
+        [
+          "0:0",
+          "1:1",
+          "2:2"
+        ]
+      ]
+    },
+    "same_symbols_diagonally_right_to_left": {
+      "reward_multiplier": 5,
+      "when": "linear_symbols",
+      "group": "rtl_diagonally_linear_symbols",
+      "covered_areas": [
+        [
+          "0:2",
+          "1:1",
+          "2:0"
+        ]
+      ]
+    }
+  }
+}
